@@ -1,0 +1,11 @@
+# Faça um algoritmo que leia o salário de um funcionário e o salário mínimo vigente.
+# Calcular e escrever quantos salários mínimos ganha o funcionário.
+
+
+def sistema(sal_fun, sal_min=1320):
+    me_dia = sal_fun / sal_min
+    print(f"O funcionário ganha {me_dia:.2f} salários minímos")
+
+
+sal_fun = float(input("Digite o salário mínimo do funcionário: "))
+sistema(sal_fun, sal_min=1320)
