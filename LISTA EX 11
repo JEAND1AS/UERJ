@@ -1,0 +1,13 @@
+# Faça um algoritmo que leia os valores de horas, minutos e segundos e transforme tudo para segundo.
+# EX: 3 horas 2minutos 7 segundos = 10927 segundos
+
+
+def horas(h, m, s):
+    total = h + m + s
+    print(f"Total de horas convertidos em segundos é de {total}: ")
+
+
+h = int(input("Digite a hora: "))*3600
+m = int(input("digite os minutos: "))*60
+s = int(input("Digite os segundos: "))*1
+horas(h, m, s)
