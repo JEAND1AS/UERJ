@@ -1,0 +1,19 @@
+#Faça um programa que, dados pelo usuário os três coeficientes a, b e c de uma equação do 2º grau,
+# escreve os valores das raízes dessa equação.
+
+
+def doisgrau(a, b, c):
+    delta = b ** 2 - 4 * a * c
+    if delta < 0:
+        print(f"Não existe raiz exata")
+    else:
+        raiz1 = (-b + delta ** 0.5) / (2 * a)
+        raiz2 = (-b - delta ** 0.5) / (2 * a)
+        print(f"O valor da raiz1 é {raiz1}")
+        print(f"O valor da raiz2 é {raiz2}")
+
+
+a = int(input("Digite o valor de a: "))
+b = int(input("Digite o valor de b: "))
+c = int(input("Digite o valor de c: "))
+doisgrau(a, b, c)
