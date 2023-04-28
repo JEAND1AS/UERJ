@@ -1,0 +1,16 @@
+# Faça um algoritmo que leia três notas de um aluno com os seus respectivos pesos e que calcule
+# e escreva a média ponderada dessas notas.
+
+
+def media(nota1, nota2, nota3):
+    me_dia = (nota1 + nota2 + nota3) / 3
+    no_ta = nota1*0.5
+    no_ta2 = nota2*0.7
+    no_ta3 = nota3*0.9
+    print(f"A media do aluno com os devidos peso é {me_dia:.2f}")
+
+
+nota1 = float(input("Digite a nota 1: "))
+nota2 = float(input("Digite a nota 2: "))
+nota3 = float(input("Digite a nota 3: "))
+media(nota1, nota2, nota3)
