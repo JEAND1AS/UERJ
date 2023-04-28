@@ -1,0 +1,11 @@
+# Faça um algoritmo que leia os valores de anos, meses e dias e imprima tudo em dia
+
+def data(ano, meses, dias):
+    total = ano+meses+dias
+    print(f"O total em dias é {total}")
+
+
+ano = int(input("digite o ano: "))*365
+meses = int(input("Digite os meses: "))*30
+dias = int(input("Digite os dias: "))*1
+data(ano, meses, dias)
