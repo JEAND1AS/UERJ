@@ -1,0 +1,10 @@
+# Faça um algoritmo que receba três notas, calcule e mostre a média aritmética entre elas.
+
+def me_dia(n1, n2, n3):
+    s = (n1+n2+n3)//3
+    print(f"A média dessas notas é: {s}")
+
+n1 = int(input("Digite a nota1: "))
+n2 = int(input("Digite a nota2: "))
+n3 = int(input("Digite a nota3: "))
+me_dia(n1, n2, n3)
