@@ -1,0 +1,11 @@
+# Faça um algoritmo que responda a área de um círculo dado o raio, fornecido pelo usuário.
+# Use o valor 3,14159 como uma aproximação de π. (S = πr2)
+
+
+def geometria(s):
+    print(f"Dado o raio {raio}cm a área do circulo é {s:.2f}cm")
+
+
+raio = float(input("Digite o raio: "))
+s = 3.14*raio**2
+geometria(s)
