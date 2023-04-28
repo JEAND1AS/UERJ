@@ -1,0 +1,21 @@
+# Faça um programa que, dados pelo usuário dois números inteiros m e n, com m > n,
+# escreve os valores de uma tripla Pitagórica (lado1, lado2 e hipotenusa) gerada a partir de m e n,
+# através das 3 fórmulas:
+#
+# Lado1 = m² – n²
+# Lado2 = 2mn
+# Hipotenusa = m² + n²
+
+
+def triangulo(m, n):
+    lado1 = (m ** 2) - (n ** 2)
+    lado2 = (m + n) * 2
+    hip = (m ** 2) + (n ** 2)
+    print(f"O primeiro lado tem {lado1}cm")
+    print(f"O segundo lado tem {lado2}cm")
+    print(f"A hipotenusa tem {hip}cm")
+
+m = int(input("Digite o área de M: "))
+n = int(input("Digite a área de N: "))
+
+triangulo(m, n)
