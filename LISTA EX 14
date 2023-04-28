@@ -1,0 +1,17 @@
+# Faça um algoritmo que leia a base e a altura de um retângulo
+# e escreva o seu perímetro, a sua área e a sua diagonal.
+
+import math
+
+def geometria(base, altura):
+    p = 2 * (base + altura)
+    a = base * altura
+    d = math.sqrt((base**2)+(altura**2))
+    print(f"Seu perímetro vale {p}cm²")
+    print(f"Sua área vale {a}cm²")
+    print(f"Sua diagonal vale {d}cm²")
+
+
+base = int(input("Digite a base do retângulo: "))
+altura = int(input("Digite a altura do retângulo: "))
+geometria(base, altura)
