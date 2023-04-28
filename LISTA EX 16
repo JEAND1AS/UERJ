@@ -1,0 +1,30 @@
+#João recebeu seu salário e precisa pagar duas contas atrasadas.
+#Como as contas estão atrasadas, João deverá pagar uma multa de 2% sobre cada uma.
+#Faça um algoritmo que leia o valor do salário de João e das contas que ele deve pagar
+#, e que mostre quanto restará do seu salário após o pagamento das contas.
+
+
+def linhas():
+    print("~~"*20)
+
+
+def fatura(sal, contas):
+    multas = contas * 0.02
+    linhas()
+    print(">> SALÁRIO <<")
+    print(f"Salário total de João R${sal}")
+    linhas()
+    print(f">> CONTAS <<")
+    print(f"Total das contas {contas}")
+    linhas()
+    print(f">> TOTAL DE MULTAS <<")
+    print(f"Total de juros das multas -R${multas}")
+    linhas()
+    print(f">> TOTAL RESTANTE DE SALÁRIO <<")
+    print(f"Salário total de João após o pagamento das contas {sal-contas-multas}")
+    linhas()
+
+
+sal = float(input("Digite o salário de João: "))
+contas = float(input("Digite o total de contas de João: "))
+fatura(sal, contas)
