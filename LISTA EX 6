@@ -1,0 +1,12 @@
+# Faça um algoritmo que converta um comprimento dado em polegadas para centímetros.
+# O programa deve utilizar o diálogo Comprimento em polegadas:
+# e escrever o resultado em uma linha da tela com a forma xxxpol = yyycm. (1 pol = 2,54 cm)
+
+
+def conversor(cm):
+    print(f"A conversão de polegadas {pol} pol para centimetros é de {cm:.2f}cm")
+
+
+pol = float(input("Digite a polegada: "))
+cm = pol*2.54
+conversor(cm)
