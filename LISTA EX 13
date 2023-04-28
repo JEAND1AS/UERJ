@@ -1,0 +1,17 @@
+# Faça um algoritmo que leia o valores em dias e imprima tudo em ano, meses e dias.
+
+
+def calendario(dia):
+
+
+    ano = dia // 365
+    dias_restante = dia - ano * 365
+    meses = dias_restante // 30
+    dias = dias_restante%30
+    print(f"O ano é {ano}")
+    print(f"Os meses é são {meses}")
+    print(f"Os dias são {dias}")
+
+
+dia = int(input("Digite os dias: "))
+calendario(dia)
