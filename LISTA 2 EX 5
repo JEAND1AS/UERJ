@@ -1,0 +1,41 @@
+# Faça um algoritmo que leia o preço de um produto, calcule o seu aumento e mostre a sua classificação. 
+
+def frutas(nome, valor):
+    print(f"="*30)
+    print(f"O preço do produto é de R${valor}")
+    print(f"="*30)
+    if valor <= 50:
+        juros = valor*0.05
+        print(f"O produto receberá um aumento de R${juros}")
+        print(f"="*30)
+        total = valor+juros
+        print(f"Seu preço atual é de R${total}")
+        print(f"="*30)
+        if total < 80:
+            print(f"Esse produto é considerado barato")
+    if valor > 50 and valor <= 120:
+        juros = valor*0.10
+        print(f"O produto receberá um aumento de R${juros}")
+        print(f"="*30)
+        total = valor+juros
+        print(f"Seu preço atual é de R${total}")
+        print(f"="*30)
+        if total > 80 and total <= 120:
+            print(f"Esse produto é considerado normal")
+    if valor > 120:
+        juros = valor*0.15
+        print(f"O produto receberá um aumento de R${juros}")
+        print(f"="*30)
+        total = valor+juros
+        print(f"Seu preço atual é de R${total}")
+        print(f"="*30)
+        if total > 120 and total <= 200:
+            print(f"Esse produto é considerado caro")
+        else:
+            print(f"PRODUTO MUITO CARO")
+
+        
+    
+nome = str(input("Digite o nome do produto: ")).upper()
+valor = float(input("Digite o valor do produto R$: "))
+frutas(nome, valor)
