@@ -1,3 +1,5 @@
+ # Faça um algoritmo que leia a idade de um nadador e que calcule e mostre a sua categoria seguindo as regras: 
+
 def categoria(idade):
     print(f"="*15)
     print(f"CATEGORIA:")
