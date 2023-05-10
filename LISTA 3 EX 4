@@ -1,0 +1,20 @@
+def categoria(idade):
+    print(f"="*15)
+    print(f"CATEGORIA:")
+    print(f"="*15)
+    if idade <= 4:
+        print(f"BABY")
+        
+    elif idade > 5 and idade <= 10:
+        print(f"INFANTIL")
+        print(f"="*15)
+    elif idade > 11 and idade <= 17:
+        print(f"JUVENIL")
+        print(f"="*15)
+    else:
+        print(f"MASTER")
+        print(f"="*15)
+
+
+idade = int(input("Digite a idade do atleta: "))
+categoria(idade)
