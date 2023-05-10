@@ -1,0 +1,33 @@
+def calculadora(n1, n2):
+    print(f"-="*15)
+    print(f"Digite o que voce deseja: ")
+    print(f"-="*15)
+    print(f"Digite 1 para somar")
+    print(f"-="*15)
+    print(f"Digite 2 para subtrair")
+    print(f"-="*15)
+    print(f"Digite 3 para multiplicar")
+    print(f"-="*15)
+    print(f"Digite 4 para dividir")
+    print(f"-="*15)
+    perg = int(input("Digite a ação: "))
+    print(f"-="*15)
+    if perg == 1:
+        soma = n1+n2
+        print(f"A soma desses dois números é: {soma}")
+    if perg == 2:
+        sub = n1-n2
+        print(f"A subtração desse número é: {sub}")
+    if perg == 3:
+        mult = n1*n2
+        print(f"A multiplicação desses números é: {mult}")
+    if perg == 4:
+        div = n1/n2
+        if div == 0:
+            print(f"Error")
+    print(f"A divisão desses números é: {div}")
+
+
+n1 = int(input("digite o n1: "))
+n2 = int(input("Digite o n2: "))
+calculadora(n1, n2)
