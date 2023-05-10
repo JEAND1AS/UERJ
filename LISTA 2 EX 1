@@ -1,0 +1,23 @@
+# Faça um algoritmo que receba três notas de um aluno, calcule e mostre a média aritmética e a 
+# mensagem que segue a tabela abaixo. Para alunos de exame, calcule e mostre a nota que deverá ser tirada no exame para a aprovação,
+# considerando que a média no exame é 6,0. Nota no exame = (12 – media).
+# 0 - 2,9 > Reprovado
+# 3,0 - 6, 9 > Exame ou  Prova final
+# 7, 0 - 10,0 > Aprovado
+ 
+
+def me_dia(nota1, nota2, nota3):
+    media = (nota1+nota2+nota3)/3
+    media2 = 12-media
+    if media <= 2.9:
+        print(f"O aluno foi reprovado pois sua média é de {media}")
+    if media >= 3.0 and media <= 6.9:
+        print(f"O aluno foi para a prova final, pois sua média é de {media}")
+    if media >= 7:
+        print(f"O aluno foi aprovado, pois sua média é de {media}")
+
+
+nota1 = float(input("Digite a primeira nota: "))
+nota2 = float(input("Digite a segunda nota: "))
+nota3 = float(input("Digite a terceira nota: "))
+me_dia(nota1, nota2, nota3)
