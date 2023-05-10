@@ -1,0 +1,23 @@
+# Elabore um algoritmo que leia 3 números do usuário e 
+# imprima-os em ordem crescente. 
+
+def ordem(n1, n2, n3):
+    if n1 > n2 > n3:
+        print(f"Em ordem crescente está {n1},{n2},{n3}")
+    if n1 > n3 > n2:
+        print(f"Em ordem crescente está {n1},{n3},{n2}")
+    if n2 > n1 > n3:
+        print(f"Em ordem crescente está {n2},{n1},{n3}")
+    if n2 > n3 > n1:
+        print(f"Em ordem crescente está {n2}, {n3}, {n1}")
+    if n3 > n2 > n1:
+        print(f"A ordem crescente é {n3},{n2},{n1}")
+    if n3 > n1 > n2:
+        print(f"Em ordem crescente está {n3}, {n1}, {n2}")
+    
+
+
+n1 = int(input("Digite o n1: "))
+n2 = int(input("Digite o n2: "))
+n3 = int(input("Digite o n3: "))
+ordem(n1, n2, n3)
