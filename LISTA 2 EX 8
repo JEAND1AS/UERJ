@@ -1,0 +1,16 @@
+# Faça um programa que leia a quantidade de horas aula dadas por dois professores e o valor por hora recebido por cada um.
+# Mostrar na tela qual dos professores tem salário total maior.
+
+def salario(prof1, prof2, horas):
+    total1 = prof1 * horas
+    total2 = prof2 * horas
+    print(f"-=" *25)
+    print(f"O valor total do salário do professor 1 é R${total1}")
+    print(f"-=" *25)
+    print(f"O valor total do salário do professor 2 é R${total2}")
+    print(f"-=" *25)
+
+prof1 = int(input("Digite o total de horas do professor 1: "))
+prof2 = int(input("Digite o total de horas do professor 2: "))
+horas = int(input("Digite o total de horas: "))
+salario(prof1, prof2, horas)
