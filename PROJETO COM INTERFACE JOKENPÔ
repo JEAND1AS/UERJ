@@ -1,0 +1,44 @@
+import tkinter as tk
+import random
+
+def jokenpo():
+    jogador = entry_jogador.get()
+    computador_aleatorio = random.choice(["pedra", "papel", "tesoura"])
+    
+
+    if jogador == "pedra" and computador_aleatorio == "papel":
+        label_resultado.config(text=f"VOCÊ PERDEU! pois o computador selecionou {computador_aleatorio}")
+    elif jogador == "pedra" and computador_aleatorio == "pedra":
+        label_resultado.config(text=f"VOCÊ EMPATOU! pois o computador selecionou {computador_aleatorio}")
+    else:
+        label_resultado.config(text=f"PAARBÉNS, VOCE GANHOU! pois o computador selecionou {computador_aleatorio}")
+    if jogador == "papel" and computador_aleatorio == "papel":
+        label_resultado.config(text=f"VOCÊ EMPATOU! pois o computador selecionou {computador_aleatorio}")
+    elif jogador == "papel" and computador_aleatorio == "pedra":
+        label_resultado.config(text=f"PAARBÉNS, VOCE GANHOU! pois o computador selecionou {computador_aleatorio}")
+    else:
+        label_resultado.config(text=f"VOCÊ PERDEU! pois o computador selecionou {computador_aleatorio}")
+    if jogador == "tesoura" and computador_aleatorio == "tesoura":
+        label_resultado.config(text=f"VOCÊ EMPATOU! pois o computador selecionou {computador_aleatorio}")
+    elif jogador == "tesoura" and computador_aleatorio == "pedra":
+        label_resultado.config(text=f"VOCÊ PERDEU! pois o computador selecionou {computador_aleatorio}")
+    else:
+        label_resultado.config(text=f"PAARBÉNS, VOCE GANHOU! pois o computador selecionou {computador_aleatorio}")
+
+janela = tk.Tk()
+janela.title("JOKENPÔ")
+
+label_jogador = tk.Label(janela, text="DIGITE SUA ESCOLHA")
+label_jogador.pack()
+
+entry_jogador = tk.Entry(janela)
+entry_jogador.pack()
+
+
+botao = tk.Button(janela, text="CONFIRMAR", command=jokenpo)
+botao.pack()
+
+label_resultado = tk.Label(janela, text="")
+label_resultado.pack()
+
+janela.mainloop()
