@@ -1,0 +1,55 @@
+# Somando as coisas #
+from tkinter import *
+
+def soma():
+    n1 = int(n1_entry.get())
+    n2 = int(n2_entry.get())
+    resultado.config(text=f"A soma entre n1 e n2 é: {n1+n2}")
+def mult():
+    n1 = int(n1_entry.get())
+    n2 = int(n2_entry.get())
+    resultado.config(text=f"A multiplicação entre n1 e n2 é: {n1*n2}")
+def sub():
+    n1 = int(n1_entry.get())
+    n2 = int(n2_entry.get())
+    resultado.config(text=f"A subtração entre n1 e n2 é: {n1-n2}")
+def div():
+    n1 = int(n1_entry.get())
+    n2 = int(n2_entry.get())
+    resultado.config(text=f"A divisão entre n1 e n2 é: {n1/n2}")
+
+
+
+janela = Tk()
+janela.title("SOMAR")
+
+n1_label = Label(janela, text="VALOR DE N1")
+n1_label.pack()
+
+n1_entry = Entry(janela)
+n1_entry.pack()
+
+n2_label = Label(janela, text="VALOR DE N2")
+n2_label.pack()
+
+n2_entry = Entry(janela)
+n2_entry.pack()
+
+
+botao_mult = Button(janela, text="MULTIPLICAR", command=mult)
+botao_mult.pack()
+
+botao = Button(janela, text="SOMAR", command=soma)
+botao.pack()
+
+botao_sub = Button(janela, text="SUBTRAIR", command=sub)
+botao_sub.pack()
+
+botao_div = Button(janela, text="DIVIDIR", command=div)
+botao_div.pack()
+
+resultado = Label(janela, text="")
+resultado.pack()
+
+janela.mainloop()
+
