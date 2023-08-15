@@ -1,0 +1,27 @@
+import tkinter as tk
+import random
+
+def resposta_sim():
+    label_resposta.config(text="PARABÉNS, agora vocês estão namorando!")
+
+def resposta_nao():
+    x = random.randint(0, 300)
+    y = random.randint(0, 300)
+    botao_nao.place(x=x, y=y) #Posiciona o botão numa horizontal e vertical específica
+
+janela = tk.Tk()
+janela.title("Pergunta Especial")
+
+label_pergunta = tk.Label(janela, text="Quer namorar comigo?")
+label_pergunta.pack()
+
+botao_sim = tk.Button(janela, text="Sim", command=resposta_sim)
+botao_sim.pack()
+
+botao_nao = tk.Button(janela, text="Não", command=resposta_nao) #Se a resposta for não, ele vai ficar indo pra posição x e y aleatório
+botao_nao.pack()
+
+label_resposta = tk.Label(janela, text="")
+label_resposta.pack()
+
+janela.mainloop()
